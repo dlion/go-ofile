@@ -11,7 +11,6 @@ import (
 )
 
 func main() {
-
 	const V = 1.0
 	fmt.Printf("-------------------------------------\n"+
 		"|Go-ofile v%.1f                       |\n"+
