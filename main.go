@@ -22,7 +22,7 @@ func main() {
 	filetype := flag.String("f", "pdf", "filetype (ex. pdf)")
 	flag.Parse()
 
-	url := "https://google.com/search?num=1000&q=" + (*domain) + "+filetype:" + (*filetype)
+	url := "https://google.com/search?num=1000&q=site:" + (*domain) + "+filetype:" + (*filetype)
 	resp, err := http.Get(url)
 	if err != nil {
 		log.Panicln(err)
